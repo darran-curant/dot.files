@@ -1,0 +1,20 @@
+#find /media -name '.AppleDesktop' | tr \\n \\0 | xargs -0 rm -r
+#find /media -name '.AppleDB' | tr \\n \\0 | xargs -0 rm -r
+#find /media -name '.AppleDouble' | tr \\n \\0 | xargs -0 rm -r
+#find /media -name ':2e*' | tr \\n \\0 | xargs -0 rm -r
+#find /media -name '.DS_Store' | tr \\n \\0 | xargs -0 rm -r
+#find /media -name '.PBSyncDB' | tr \\n \\0 | xargs -0 rm -r
+
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ".AppleDouble" -depth -exec rm -Rf {} \;
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ".AppleDB" -depth -exec rm -Rf {} \;
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ".AppleDesktop" -depth -exec rm -Rf {} \;
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ":2e*" -depth -exec rm -Rf {} \;
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ".DS_Store" -depth -exec rm -Rf {} \;
+#find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -name ".PBSyncDB" -depth -exec rm -Rf {} \;
+
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.AppleDouble' -type d -exec rm -rf {} \;
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.AppleDB' -type d -exec rm -rf {} \;
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.AppleDesktop' -type d -exec rm -rf {} \;
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.:2e*' -type d -exec rm -rf {} \;
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.DS_Store' -type d -exec rm -rf {} \;
+find /media/55de8657-a37b-46f4-a913-c26ed4016c5a/ -depth -name '.PBSyncDB' -type d -exec rm -rf {} \;
